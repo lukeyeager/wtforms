@@ -1,0 +1,24 @@
+Source: wtforms
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Bernd Zeimetz <bzed@debian.org>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 7.0.50~), python-all (>= 2.6.6-3~), python-setuptools
+Build-Depends-Indep: python-sqlalchemy (>= 0.5), python-django, python-dateutil,
+ python-sphinx (>= 0.6), python (>= 2.6.6-3~) | python-pysqlite2
+Standards-Version: 3.9.5
+X-Python-Version: >= 2.4
+Homepage: http://wtforms.simplecodes.com/
+Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/wtforms/trunk/
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/wtforms/trunk/
+
+Package: python-wtforms
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Suggests: python-sqlalchemy  (>= 0.5), python-django
+Recommends: python-dateutil, libjs-jquery, libjs-underscore
+Description: flexible forms validation and rendering library for Python
+ WTForms is a HTML form field generator which allows full customization
+ with templates, using the template engine of your choice. It also allows
+ to create forms based on ORM models from Django, SqlAlchemy and the
+ Google Appengine.

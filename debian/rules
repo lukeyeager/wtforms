@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+%:
+	dh --buildsystem=python_distutils --with=python2 $@
+
+build:
+	dh --buildsystem=python_distutils --with=python2 $@
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	-cd tests ;\
+	    for python in $(shell pyversions -vr); do \
+	        export PYTHONPATH=`echo ../build/lib*-$${python}` ;\
+		python$${python} runtests.py ext_sqlalchemy ext_dateutil ext_django ;\
+	done
+endif
+
+	cd docs && make html
+	rm docs/_build/html/_static/jquery.js
+	rm docs/_build/html/_static/underscore.js
+
+clean:
+	dh --buildsystem=python_distutils --with=python2 $@
+	rm -rf docs/_build
+
+
+override_dh_compress:
+	dh_compress -X/html/

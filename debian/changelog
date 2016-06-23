@@ -1,0 +1,56 @@
+wtforms (2.0.1-1) unstable; urgency=medium
+
+  * New upstream version
+  * Add python-setuptools as build-dependency
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sun, 05 Oct 2014 12:32:12 +0200
+
+wtforms (1.0.5-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Christian Hofstaedtler ]
+  * New upstream version.
+  * Upstream has moved, update debian/watch file.
+  * Replace sphinx-bundled underscore.js with link to libjs-underscore.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Sat, 26 Jul 2014 23:53:44 +0200
+
+wtforms (1.0.1-1) unstable; urgency=low
+
+  [ Bernd Zeimetz ]
+  * New upstream version.
+  * Set PYTHONPATH for tests. 
+  * Ignoring test results for now, they fail due to missing translations.
+  * Migrate to dh_python2 
+
+  [ Jakub Wilk ]
+  * Add Vcs-* fields.
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sun, 15 Apr 2012 16:38:10 +0200
+
+wtforms (0.6.2-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Bernd Zeimetz <bzed@debian.org>  Wed, 20 Oct 2010 10:57:52 +0200
+
+wtforms (0.6.1-2) unstable; urgency=low
+
+  * Add build dependency on python (>= 2.5.4-5~) | python-pysqlite2
+    for easy backporting.
+  * Running tests requires sqlalchemy >= 0.5. 
+  * Sphinx 0.6 is required to build the documentation. 
+  * Remove unnecessary 'A' from the short description. 
+
+ -- Bernd Zeimetz <bzed@debian.org>  Wed, 20 Oct 2010 10:50:09 +0200
+
+wtforms (0.6.1-1) unstable; urgency=low
+
+  * Initial upload.
+
+ -- Bernd Zeimetz <bzed@debian.org>  Sun, 17 Oct 2010 16:35:10 +0200
