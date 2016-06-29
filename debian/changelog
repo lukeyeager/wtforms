@@ -1,3 +1,9 @@
+wtforms (2.0.1-1ppa1) trusty; urgency=medium
+
+  * PPA upload
+
+ -- Luke Yeager <luke.yeager@gmail.com>  Tue, 28 Jun 2016 17:59:22 -0700
+
 wtforms (2.0.1-1) unstable; urgency=medium
 
   * New upstream version
